@@ -137,7 +137,7 @@ async def bgmi(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     user_id = str(update.message.from_user.id)
 
     if user_id not in users or datetime.datetime.now() > datetime.datetime.strptime(users[user_id], '%Y-%m-%d %H:%M:%S'):
-        await update.message.reply_text("❌ YOU ARE NOT AUTHORIZED. DM OWNER @FAKEYT700 )
+        await update.message.reply_text("❌ YOU ARE NOT AUTHORIZED . DM OWNER @FAKEYT700)
         return
 
     if len(context.args) != 3:
